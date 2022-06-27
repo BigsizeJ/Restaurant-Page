@@ -3,7 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: "development",
-    entry: './src/index.js',
+    entry: {
+        main: './src/index.js',
+        app: './src/app.js',
+        home: './src/home.js',
+        about: './src/about.js',
+        contact: './src/contact.js',
+    },
     devtool: 'inline-source-map',
     output: {
         filename: '[name].bundle.js',
@@ -31,6 +37,10 @@ module.exports = {
                 test: /\.(svg|png|jpg|jpg|gif)/i,
                 type: 'asset/resource'
             },
+            {
+                test: /\.(ttf|woff)/i,
+                type: 'asset/resource'
+            }
         ]
     }
 }

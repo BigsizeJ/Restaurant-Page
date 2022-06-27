@@ -30,6 +30,7 @@ body{
     width: 100%;
     height: 100%;
     display: grid;
+    gap:  50px;
     grid-template-rows: repeat(2, min-content);
     .header{
         display: grid;
@@ -72,12 +73,31 @@ body{
             }
         }
     }
-    .container {
-        display: flex;
-        place-content: center;
+
+    .content {
+        display: grid;
+        justify-content: center;
+        padding: 10px 0px;
         .homeDiv {
-            width: 50%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            background-color: rgba(3, 3, 3, .9);
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            .chefImg {
+                width: 400px;
+            }
+            .titlecontent {
+                font-family: Tangerine, sans-serif;
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2rem;
+            }
         }
+
     }
 }
 
@@ -98,6 +118,22 @@ body{
             .title{
                 font-size: 4rem;
             }
+        }
+
+        .content {
+            padding: 0;
+            .homeDiv {
+                grid-template-columns: 1fr;
+                grid-template-rows: repet(2, auto);
+                padding: 10px;
+                .chefImg {
+                    width: 300px;
+                }
+                .homeDivRight {
+                    grid-row: 1;
+                }
+            }
+            
         }
     }
 }

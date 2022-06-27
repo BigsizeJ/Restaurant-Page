@@ -1,5 +1,5 @@
 import Home from './home.js'
-import About from './about.js'
+import Menu from './menu.js'
 import Contact from './contact.js'
 
 const App = (() => {
@@ -39,14 +39,14 @@ const App = (() => {
             Home()
         })
 
-        const aboutButton = document.createElement('button')
-        aboutButton.classList.add('btn')
-        aboutButton.textContent = "About"
-        aboutButton.addEventListener('click', (e) => {
+        const menuButton = document.createElement('button')
+        menuButton.classList.add('btn')
+        menuButton.textContent = "Menu"
+        menuButton.addEventListener('click', (e) => {
             if(e.target.classList.contains('active')) return
 
-            setActive(aboutButton)
-            About()
+            setActive(menuButton)
+            Menu()
         })
 
         const contactButton = document.createElement('button')
@@ -60,7 +60,7 @@ const App = (() => {
         })
 
         nav.appendChild(homeButton)
-        nav.appendChild(aboutButton)
+        nav.appendChild(menuButton)
         nav.appendChild(contactButton)
 
         return nav

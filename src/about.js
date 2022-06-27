@@ -1,3 +1,7 @@
 export default function About() {
-    console.log('Hello')
+    const content = document.querySelector('.content')
+    content.innerText = ''
+    const h1 = document.createElement('h1')
+    h1.textContent = "Hello About"
+    content.appendChild(h1)
 }

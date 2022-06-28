@@ -15,12 +15,14 @@ export default function Home() {
     content.textContent = ''
 
     const h1 = document.createElement('h1')
+    const p = document.createElement('p')
     
     h1.innerHTML = "<span class='titlecontent'>Burger fiesta</span> serving since 1958"
 
     homeDivLeft.appendChild(chefImg)
     homeDivRight.appendChild(h1)
-    homeDivRight.appendChild(createText('Made with Perfection'))
+    homeDivRight.appendChild(createText('Made with Perfection in mind'))
+    
     homeDiv.appendChild(homeDivLeft)
     homeDiv.appendChild(homeDivRight)
     content.appendChild(homeDiv)

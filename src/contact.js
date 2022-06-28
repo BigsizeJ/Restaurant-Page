@@ -1,3 +1,6 @@
 export default function Contact() {
-    console.log('Hello')
+    const content = document.querySelector('.content')
+    const contactDiv = document.createElement('div')
+
+    
 }

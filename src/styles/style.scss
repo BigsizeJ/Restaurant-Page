@@ -131,6 +131,34 @@ body{
             }
         }
 
+        .contactDiv {
+            background-color: $DivBackground;
+            height: fit-content;
+            padding: 20px 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            div {
+                display: flex;
+                justify-items: center;
+                gap: 5px;
+                img {
+                    filter: invert(44%) sepia(62%) saturate(2282%) hue-rotate(191deg) brightness(100%) contrast(103%);
+                    
+                }
+            }
+
+            p {
+                padding: 0;
+                margin: 0;
+            }
+
+            .mapImg {
+                width: 600px;
+            }
+        }
+
     }
 }
 
@@ -176,7 +204,11 @@ body{
                     padding: 30px;
                 }
             }
-            
+            .contactDiv {
+                .mapImg {
+                    width: 350px;
+                }
+            }
         }
     }
 }
